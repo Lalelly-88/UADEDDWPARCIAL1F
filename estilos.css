@@ -1,0 +1,226 @@
+/**general**/
+body {
+    display: grid;
+    margin: auto;
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(6, auto);
+    background-color: #F2F2F2;
+  }
+  @media screen and (max-width: 1280px) {
+    body {
+      display: grid;
+      margin: auto;
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+  header {
+    grid-column: 1/18;
+    grid-row: 1;
+  }
+  @media screen and (max-width: 1280px) {
+    header {
+      grid-column: 1/9;
+    }
+  }
+  main {
+    grid-column: 1/18;
+    grid-row: 2/5;
+  }
+  @media screen and (max-width: 1280px) {
+    main {
+      grid-column: 1/9;
+    }
+  }
+  footer {
+    grid-column: 1/18;
+    grid-row-start: 6;
+  }
+  @media screen and (max-width: 1280px) {
+    footer {
+      grid-column: 1/9;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "helvetica neue", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  p {
+    color: #1D1D1D;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  ::placeholder {
+    font-family: "helvetica neue", sans-serif;
+    color: #595959;
+    font-size: 1rem;
+  }
+  .boton1 {
+    min-width: 15rem;
+    display: flex;
+    justify-content: center;
+    font-family: "helvetica neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00316B;
+    background-color: #F2F2F2;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #FF9595;
+    padding: 0.9rem 2rem 0.8rem 2rem;
+  }
+  .boton1:hover {
+    font-family: "helvetica neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00316B;
+    background-color: #FFD4D4;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #FF9595;
+    padding: 0.9rem 2rem 0.8rem 2rem;
+  }
+
+/**header**/
+header {
+    height: auto;
+}
+  .heroF {
+    max-width: 100%;
+    height: 10rem;
+    background: linear-gradient(to right, #FF9595, #004494);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+  }
+  @media screen and (max-width: 763px) {
+    .heroF .hero__info {
+      width: 100%;
+      padding: 0 1rem 0 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 3400;
+    }
+  }
+
+/**Footer**/
+footer {
+    max-width: 100%;
+    height: 8rem;
+    background: linear-gradient(to right, #FF9595, #004494);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imagenF{
+    max-width: 20%;
+  }
+  @media screen and (max-width: 763px) {
+    footer {
+     height: 5rem;
+    }
+  }
+  
+  /**Ficha**/
+main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }  
+.div{
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+.ficha__rectangulo_a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.foto{
+    margin: 3.5rem 0 3.5rem 0;
+  }
+.ficha__info {
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.ficha__info__h1 {
+    color: #004494;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0.2rem 0;
+  }
+  
+@media screen and (max-width: 1800px) {
+    .div{
+        max-width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    main {
+        height: auto;
+
+      } 
+    .r1 {
+        display: none;
+    }
+    .r2 {
+        display: none;
+      }
+    .div{
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    .ficha__info {
+        margin-left: 0;
+        max-width: 100%;
+      }
+    .foto{
+        margin: 0 0 2rem 0;
+      }
+      .boton1 {
+        min-width: 100%;
+      }
+  }
+  @media screen and (max-width: 500px) {
+    .boton1 {
+        min-width: 100%;
+      }
+      .div{
+        max-width: 80%;
+      }
+  }
+
+
